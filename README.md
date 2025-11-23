@@ -1,40 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+<img src="https://capsule-render.vercel.app/api?type=waving&color=random&height=300&section=header&text=My Portfolio Site v1.0 &fontSize=70"/>
 
-## Getting Started
+<img class = "photo" src="public/ReadMeMain.jpg" alt="웹사이트" width="400" height="900">
 
-First, run the development server:
+<style>
+  .photo {
+    border-radius: 12px;
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+  }
+</style>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<br/><br><br/><br/>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🗓️ 기간
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+2025.11.20 ~ 2025.11.23
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<br/><br/>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+👩‍💻 기술스택
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,nextjs,git,supabase)](https://skillicons.dev)
 
-## Learn More
+<br/><br/>
+💁 설명
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+<br/>
+- &nbsp; 지금까지 만든 모든 프로젝트 및 개발자 프로필 소개를 위한 사이트 입니다!
+<br/><br/>
+- &nbsp; 페이지 기반 라우팅 방식 Next.js 버전으로 제작하였고,
+ <br/><br/>
+- &nbsp; 새로운 프로젝트가 추가될때마다 깃 api를 통해 지속해서 크롤링되어 업데이트 확인이 가능합니다!
+ <br/><br/>
+- &nbsp; Contact Me는 Message.js API를 사용하여 답변온 메일을 실시간으로
+  확인이 가능합니다!

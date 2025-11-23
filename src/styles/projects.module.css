@@ -1,0 +1,79 @@
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto 200px auto;
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+.wrap ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 32px;
+    padding: 0;
+    list-style: none;
+}
+
+.wrap li {
+    display: block;
+    position: relative;
+}
+
+.cardWrapper {
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardWrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.projectGoWrap {
+    position: absolute;
+    top: 7px;
+    right: 0px;
+}
+
+.projectGo {
+    padding: 8px 14px;
+    background-color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'GowoonDodum', sans-serif;
+    text-decoration: none;
+    
+    color: #333;
+    
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.projectGo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    .wrap ul {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .wrap ul {
+        grid-template-columns: 1fr;
+    }
+}

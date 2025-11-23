@@ -1,141 +1,141 @@
-.page {
-  --background: #fafafa;
-  --foreground: #fff;
-
-  --text-primary: #000;
-  --text-secondary: #666;
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-  --button-secondary-border: #ebebeb;
-
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-geist-sans);
-  background-color: var(--background);
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 10%;
+    margin-left: 20%;
+    margin-bottom: 200px;
 }
 
-.main {
-  display: flex;
-  min-height: 100vh;
-  width: 100%;
-  max-width: 800px;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  background-color: var(--foreground);
-  padding: 120px 60px;
+.leftBlock {
+    gap: 0;
 }
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  gap: 24px;
+.mainTitle{
+    padding-left: 0;
+    flex: 1 1 300px;
+    font-size: 30px;
 }
 
-.intro h1 {
-  max-width: 320px;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 48px;
-  letter-spacing: -2.4px;
-  text-wrap: balance;
-  color: var(--text-primary);
+.mainTitle > h1 {
+    margin: 0;
+    line-height: 1; /*줄 간격 최소화*/
 }
 
-.intro p {
-  max-width: 440px;
-  font-size: 18px;
-  line-height: 32px;
-  text-wrap: balance;
-  color: var(--text-secondary);
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
 }
 
-.intro a {
-  font-weight: 500;
-  color: var(--text-primary);
+.buttons button{
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+
+    /* 부드러운 애니메이션 */
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-.ctas {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 440px;
-  gap: 16px;
-  font-size: 14px;
+/* 마우스 올렸을 때 살짝 커지기 */
+.buttons button:hover {
+    transform: scale(1.05);
 }
 
-.ctas a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  padding: 0 16px;
-  border-radius: 128px;
-  border: 1px solid transparent;
-  transition: 0.2s;
-  cursor: pointer;
-  width: fit-content;
-  font-weight: 500;
+/* 클릭 시 눌리는 효과 */
+.buttons button:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* 안쪽 그림자 추가*/
 }
 
-a.primary {
-  background: var(--text-primary);
-  color: var(--background);
-  gap: 8px;
+.projectDemo{
+    margin-top: 25%;
+    font-size: 25px;
+    color: #d3d3d3;
 }
 
-a.secondary {
-  border-color: var(--button-secondary-border);
+.projectDemo .slash {
+    margin: 0 50px; /* 앞뒤로 띄우기 */
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
+.mainImage{
+    flex: 0 0 auto;
+    max-width: 1000px;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
 
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-@media (max-width: 600px) {
-  .main {
-    padding: 48px 24px;
-  }
+.mainImage:hover {
+    transform: scale(1.01);
+}
 
-  .intro {
-    gap: 16px;
-  }
+.mainImage img {
+    display: block;
+}
 
-  .intro h1 {
+.projectGoWrap{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 10;
+}
+
+.projectGo{
+   padding: 8px 14px;
+    background-color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: 'GowoonDodum', sans-serif;
+    text-decoration: none;
+    
+    color: #333;
+    
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.projectGo:hover{
+    transform: scale(1.05);
+}
+
+.projectGo:active {
+    transform: scale(0.95);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.upArrow button{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
     font-size: 32px;
-    line-height: 40px;
-    letter-spacing: -1.92px;
-  }
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-
-  .page {
-    --background: #000;
-    --foreground: #000;
-
-    --text-primary: #ededed;
-    --text-secondary: #999;
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-    --button-secondary-border: #1a1a1a;
-  }
+.upArrow button:hover {
+    background-color: #555;
+    transform: scale(1.1);
 }

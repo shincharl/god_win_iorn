@@ -1,0 +1,71 @@
+.wrap{
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.titleWrap {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+}
+
+:global(#contact) {
+  scroll-margin-top: 120px; /* 헤더 높이에 맞게 조절 */
+}
+
+
+.formWrap{
+    width: 30%;
+}
+
+.wrap img {
+    width: 700px;
+    border-radius: 12px;
+    margin-top: 6.5%;
+}
+
+.formWrap form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formWrap input,
+.formWrap textarea {
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+.formWrap textarea {
+    height: 120px;
+}
+
+.formWrap button {
+    width: 100%;
+    max-width: 200px;
+    padding: 12px 2px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2d2d2d;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    font-family: 'GowoonDodum', sans-serif;
+    margin-top: 20px;
+    align-items: flex-end;
+}
+
+.formWrap button:hover {
+    transform: scale(1.05);
+}
